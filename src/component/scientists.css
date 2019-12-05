@@ -1,0 +1,132 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, serif;
+  font-size: 1rem;
+  color: #000;
+}
+
+header {
+  display: block;
+  margin: 0;
+  padding: 0.5rem;
+  color: #000;
+}
+
+header h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
+h2,
+h5 {
+  margin: 0;
+  padding: 0.2rem 0;
+}
+
+main {
+  background: #fff;
+}
+
+.flex-main-container {
+  display: flex;
+}
+
+.main-container {
+  flex-grow: 20;
+  padding: 2rem;
+}
+
+.grid-container {
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-content {
+  border-radius: 50%;
+  border: 2px solid #77b42e;
+  padding: 2px;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.image-caption {
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #77b42e;
+  flex: 1 1 auto;
+  align-self: center;
+}
+
+.image-caption span {
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-content {
+  flex: 1;
+  flex-basis: 50%;
+  -ms-flex: auto;
+  padding: 2rem 0;
+}
+
+.divider {
+  border: 1px solid #77b42e;
+  margin-bottom: 2rem;
+}
+
+.sub-title {
+  color: #77b42e;
+}
+
+.caption-title {
+  font-size: 0.9rem;
+  padding-bottom: 0.4rem;
+}
+
+.caption-subtitle {
+  font-size: 0.8rem;
+}
+
+.flex-side-border {
+  background: url(../assets/images/gradient-border.svg) repeat-y;
+  background-size: cover;
+  background-position: center;
+  min-width: 1.5rem;
+  max-width: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-grow: 9;
+  }
+
+  .flex-side-border {
+    flex-grow: 1;
+  }
+
+  .grid-content {
+    flex-basis: 21rem;
+  }
+}
